@@ -20,6 +20,10 @@ angular.module('OwmApp', ['ngRoute'])
         })
         .when("/error", {
         	template: "<p>Error Page Not Found</p>"
+        	// NOT GETTING ERROR PAGE
+        })
+        .otherwise({
+        	redirecTo: "/error"
         });
     })
     .controller('HomeCtrl', function($scope) {
