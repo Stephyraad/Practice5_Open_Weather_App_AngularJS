@@ -1,8 +1,9 @@
 <html lang="en" ng-app="OwmApp">
 <head>
 	<title>Open Weather App</title>
+	<link rel="stylesheet" type="text/css" href="./owm-app.css">
 </head>
-<body>
+<body ng-class="{loading: isLoading}">
 
 	<a href="#/cities/New%20York">New York</a>
 	<a href="#/cities/Dallas">Dallas</a>
@@ -15,6 +16,7 @@
 
     <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="./bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-animate.js"></script>
     <script type="text/javascript" src="./owm-app.js"></script>
 </body>
 </html>
